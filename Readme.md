@@ -33,6 +33,7 @@
 Here are a list of some of the people/person(s) that I'd like to thank for helping me out.
 
 * [RoBrit](https://github.com/RoBrit/Snad) - For the original mod.
+* @osbourn - helped porting to 1.16
 
 #### Contact Me
 Here are some of the places you can find/contact me:
