@@ -1,0 +1,11 @@
+modLoader="javafml"
+loaderVersion="[33,)"
+license="MIT"
+issueTrackerURL="https://github.com/lazynessmind/Snad/issues"
+[[mods]]
+modId="snad"
+version="1.0"
+displayName="Snad"
+credits="TheRoBrit (Original mod)"
+authors="lazy"
+description='''You're finally able to have your sugarcane grow faster. What could possibly be better than that?'''
