@@ -1,15 +1,15 @@
 <h1 align="center">Snad - Back to the Past</h1>
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/lazynessmind/Snad.svg">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/lazyMods/SnadBackThePast.svg">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/lazynessmind/Snad.svg">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/lazyMods/SnadBackThePast.svg">
   
-  <a href="https://github.com/lazynessmind/Snad/commits/1.15.2">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/lazynessmind/Snad.svg">
+  <a href="https://github.com/lazyMods/SnadBackThePast/commits/1.15.2">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/lazyMods/SnadBackThePast.svg">
   </a>
 
-  <a href="https://github.com/lazynessmind/Snad/issues">
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/lazynessmind/Snad.svg">
+  <a href="https://github.com/lazyMods/Snad/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/lazyMods/SnadBackThePast.svg">
   </a>
 
   <a href="https://www.curseforge.com/minecraft/mc-mods/snad-back-to-the-future">
@@ -22,7 +22,7 @@
   
 </p>
 <h1 align="center">
-  <img src="https://github.com/lazynessmind/Snad/blob/1.15.2/imgs/logo.png"><br>
+  <img src="https://user-images.githubusercontent.com/52864251/94370096-b76fcb80-00e5-11eb-9a8c-0070852a8aad.png"><br>
 </h1>
 
 [Credits](#credits) - Credits to those that deserve them.
