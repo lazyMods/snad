@@ -5,6 +5,7 @@ import lazy.snad.forge.config.SandCloth;
 import me.shedaniel.architectury.platform.forge.EventBuses;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.fml.DistExecutor;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
@@ -13,6 +14,7 @@ public class SnadForge {
     public SnadForge() {
         EventBuses.registerModEventBus(Snad.MOD_ID, FMLJavaModLoadingContext.get().getModEventBus());
         Snad.init();
-        DistExecutor.safeRunWhenOn(Dist.CLIENT, () -> SandCloth::create);
+        if (ModList.get().isLoaded("cloth-config"))
+            DistExecutor.safeRunWhenOn(Dist.CLIENT, () -> SandCloth::create);
     }
 }
