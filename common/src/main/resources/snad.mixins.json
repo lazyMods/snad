@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "lazy.snad.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "MixinCactusBlock",
+    "MixinSugarCaneBlock"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
