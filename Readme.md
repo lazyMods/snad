@@ -25,6 +25,9 @@
   <img src="https://user-images.githubusercontent.com/52864251/94370096-b76fcb80-00e5-11eb-9a8c-0070852a8aad.png"><br>
 </h1>
 
+* [Fabric Snad](https://www.curseforge.com/minecraft/mc-mods/fabric-snad)
+* [Forge Snad](https://www.curseforge.com/minecraft/mc-mods/forge-snad)
+
 [Credits](#credits) - Credits to those that deserve them.
 
 [Contact Me](#contact-me) - Places you can either find or contact me.
