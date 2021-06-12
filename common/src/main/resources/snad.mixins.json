@@ -4,8 +4,8 @@
   "package": "lazy.snad.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "MixinCactusBlock",
-    "MixinSugarCaneBlock"
+    "InjectCactusCanSurvive",
+    "InjectSugarCaneCanSurvive"
   ],
   "injectors": {
     "defaultRequire": 1
