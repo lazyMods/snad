@@ -12,6 +12,7 @@ architectury {
 }
 
 loom {
+    mixinConfig("snad.mixins.json")
     useFabricMixin = true
 }
 
