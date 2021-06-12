@@ -3,6 +3,7 @@ package lazy.snad;
 import lazy.snad.config.ModConfigs;
 import lazy.snad.register.ModBlocks;
 import lazy.snad.register.ModItems;
+import lazy.snad.register.ModTags;
 
 public class Snad {
 
@@ -13,5 +14,6 @@ public class Snad {
     public static void init() {
         ModBlocks.init();
         ModItems.init();
+        ModTags.init();
     }
 }
