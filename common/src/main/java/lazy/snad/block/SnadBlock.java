@@ -56,7 +56,6 @@ public class SnadBlock extends FallingBlock {
                 } else {
                     isSameBlockType = false;
                 }
-                System.out.println(height);
             }
         }
     }
