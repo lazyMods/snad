@@ -1,6 +1,7 @@
 package lazy.snad.block;
 
 import lazy.snad.Snad;
+import lazy.snad.register.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.BlockGetter;
@@ -32,19 +33,31 @@ public class SnadBlock extends FallingBlock {
     public void randomTick(BlockState blockState, ServerLevel serverLevel, BlockPos blockPos, Random random) {
         super.tick(blockState, serverLevel, blockPos, random);
 
-        BlockState blockStateAbove = serverLevel.getBlockState(blockPos.above());
-        Block blockAbove = blockStateAbove.getBlock();
+        Block blockAbove = serverLevel.getBlockState(blockPos.above()).getBlock();
 
-        int height = 1;
-        boolean isSameBlock = true;
-        while (isSameBlock) {
-            for (int i = 0; i < Snad.configs.getSpeed(); i++) {
-                if (i == 0) {
-                    serverLevel.getBlockState(blockPos.above(height)).randomTick(serverLevel, blockPos.above(height), random);
+        if (blockAbove.is(ModTags.VALID_PLANT)) {
+            boolean isSameBlockType = true;
+            int height = 1;
+
+            while (isSameBlockType) {
+                if (serverLevel.getBlockState(blockPos.above(height)).getBlock() != null) {
+                    Block nextPlantBlock = serverLevel.getBlockState(blockPos.above(height)).getBlock();
+                    if (nextPlantBlock.getClass() == blockAbove.getClass()) {
+                        for (int growthAttempts = 0; growthAttempts < Snad.configs.getSpeed();
+                             growthAttempts++) {
+                            if (growthAttempts == 0) {
+                                nextPlantBlock.randomTick(serverLevel.getBlockState(blockPos.above(height)), serverLevel, blockPos.above(height), random);
+                            }
+                        }
+                        height++;
+                    } else {
+                        isSameBlockType = false;
+                    }
+                } else {
+                    isSameBlockType = false;
                 }
+                System.out.println(height);
             }
-            height++;
-            isSameBlock = serverLevel.getBlockState(blockPos.above(height)).getBlock().getClass() == blockAbove.getClass();
         }
     }
 }
