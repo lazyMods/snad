@@ -19,6 +19,9 @@
   "entrypoints": {
     "main": [
       "lazy.snad.fabric.SnadFabric"
+    ],
+    "modmenu": [
+      "lazy.snad.fabric.config.SnadModEntry"
     ]
   },
   "depends": {
