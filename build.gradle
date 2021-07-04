@@ -20,13 +20,21 @@ subprojects {
     }
 }
 
+project(":forge"){
+    version = rootProject.forge_mod_version
+}
+
+project(":fabric"){
+    version = rootProject.fabric_mod_version
+}
+
 allprojects {
     apply plugin: "java"
     apply plugin: "architectury-plugin"
     apply plugin: "maven-publish"
 
     archivesBaseName = rootProject.archives_base_name
-    version = rootProject.mod_version
+
     group = rootProject.maven_group
 
     tasks.withType(JavaCompile) {
