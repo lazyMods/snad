@@ -35,7 +35,7 @@ public class SnadBlock extends FallingBlock {
 
         Block blockAbove = serverLevel.getBlockState(blockPos.above()).getBlock();
 
-        if (blockAbove.is(ModTags.VALID_PLANT)) {
+        if (blockAbove.defaultBlockState().is(ModTags.VALID_PLANT)) {
             boolean isSameBlockType = true;
             int height = 1;
 

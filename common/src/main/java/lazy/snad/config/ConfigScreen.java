@@ -1,13 +1,13 @@
 package lazy.snad.config;
 
 import lazy.snad.Snad;
-import me.shedaniel.clothconfig2.api.ConfigBuilder;
+//import me.shedaniel.clothconfig2.api.ConfigBuilder;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.TranslatableComponent;
 
 public class ConfigScreen {
 
-    public static Screen create(Screen parent) {
+    /*public static Screen create(Screen parent) {
         ConfigBuilder configBuilder = ConfigBuilder.create().setParentScreen(parent).setTitle(new TranslatableComponent("config.title"));
 
         configBuilder.getOrCreateCategory(new TranslatableComponent("config.general")).addEntry(
@@ -26,5 +26,5 @@ public class ConfigScreen {
             }
             Snad.configs = ModConfigs.get();
         }).build();
-    }
+    }*/
 }

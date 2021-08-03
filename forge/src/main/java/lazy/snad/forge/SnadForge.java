@@ -1,8 +1,8 @@
 package lazy.snad.forge;
 
+import dev.architectury.platform.forge.EventBuses;
 import lazy.snad.Snad;
 import lazy.snad.forge.config.SandCloth;
-import me.shedaniel.architectury.platform.forge.EventBuses;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.ModList;
