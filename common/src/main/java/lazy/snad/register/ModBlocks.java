@@ -1,5 +1,7 @@
 package lazy.snad.register;
 
+import dev.architectury.registry.registries.DeferredRegister;
+import dev.architectury.registry.registries.RegistrySupplier;
 import lazy.snad.Snad;
 import lazy.snad.block.SnadBlock;
 import lazy.snad.block.SoulSnadBlock;

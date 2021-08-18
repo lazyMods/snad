@@ -7,9 +7,9 @@ java {
 }
 
 dependencies {
-    modApi "me.shedaniel:architectury:${rootProject.architectury_version}"
+    modApi "dev.architectury:architectury:${rootProject.architectury_version}"
     modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_loader_version}"
-    modCompileOnly("me.shedaniel.cloth:cloth-config:${rootProject.cloth_config_version}") {
+    /*modCompileOnly("me.shedaniel.cloth:cloth-config:${rootProject.cloth_config_version}") {
         exclude(group: "net.fabricmc.fabric-api")
-    }
+    }*/
 }
