@@ -17,6 +17,7 @@ public class ModItems {
 
     public static final RegistrySupplier<Item> SNAD = ITEMS.register("snad", () -> new BlockItem(ModBlocks.SNAD.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
     public static final RegistrySupplier<Item> RED_SNAD = ITEMS.register("red_snad", () -> new BlockItem(ModBlocks.RED_SNAD.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+    public static final RegistrySupplier<Item> SOUL_SNAD = ITEMS.register("soul_snad", () -> new BlockItem(ModBlocks.SOUL_SNAD.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
 
     public static void init() {
         ITEMS.register();
