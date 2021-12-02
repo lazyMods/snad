@@ -1,0 +1,30 @@
+modLoader = "javafml"
+loaderVersion = "${forge_version_range}"
+issueTrackerURL = "https://github.com/lazyMods/SnadBackThePast/issues"
+license = "MIT"
+
+[[mods]]
+modId = "snad"
+version = "${version}"
+displayName = "Snad"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/snad-back-to-the-past"
+authors = "lazy && TheRoBrit"
+credits= "TheRoBrit the original mod creator."
+description = '''
+You're finally able to have your sugarcane grow faster. What could possibly be better than that?
+'''
+logoFile="logo.png"
+
+[[dependencies.snad]]
+modId = "forge"
+mandatory = true
+versionRange = "${forge_version_range}"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.snad]]
+modId = "minecraft"
+mandatory = true
+versionRange = "${minecraft_version_range}"
+ordering = "NONE"
+side = "BOTH"
