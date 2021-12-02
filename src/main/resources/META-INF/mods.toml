@@ -1,5 +1,5 @@
 modLoader = "javafml"
-loaderVersion = "${forge_version_range}"
+loaderVersion = "${forge_version}"
 issueTrackerURL = "https://github.com/lazyMods/SnadBackThePast/issues"
 license = "MIT"
 
@@ -18,13 +18,13 @@ logoFile="logo.png"
 [[dependencies.snad]]
 modId = "forge"
 mandatory = true
-versionRange = "${forge_version_range}"
+versionRange = "${forge_version}"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.snad]]
 modId = "minecraft"
 mandatory = true
-versionRange = "${minecraft_version_range}"
+versionRange = "${mc_version}"
 ordering = "NONE"
 side = "BOTH"
