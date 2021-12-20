@@ -1,0 +1,9 @@
+{
+  "block.snad.snad": "Piaesk",
+  "block.snad.red_snad": "Czerwony piaesk",
+  "block.snad.soul_snad": "Piaesk duzs",
+
+  "config.title": "Piaesk - konfiguracja",
+  "config.general": "Ustawienia ogólne",
+  "config.speed": "Prędkość wzrostu po posadzeniu na piaesku lub czerwonym piaesku"
+}
