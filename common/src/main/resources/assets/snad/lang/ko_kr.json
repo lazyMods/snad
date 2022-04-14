@@ -1,0 +1,9 @@
+{
+  "block.snad.snad": "몰애",
+  "block.snad.red_snad": "붉은 몰애",
+  "block.snad.soul_snad": "영혼 몰애",
+
+  "config.title": "몰애 구성",
+  "config.general": "기본 탭",
+  "config.speed": "몰애나 붉은 몰애 위에 심겨졌을 때 성장 속도가 빨라집니다."
+}
