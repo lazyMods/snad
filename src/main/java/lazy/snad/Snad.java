@@ -7,7 +7,7 @@ import lazy.snad.register.ModTags;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.ItemStack;
-import net.minecraftforge.event.CreativeModeTabEvent;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -26,8 +26,8 @@ public class Snad {
     }
 
     @SubscribeEvent
-    public static void onCreativeTabEvent(CreativeModeTabEvent.BuildContents event) {
-        if (event.getTab() == CreativeModeTabs.BUILDING_BLOCKS) {
+    public static void onCreativeTabEvent(BuildCreativeModeTabContentsEvent event) {
+        if (event.getTabKey().equals(CreativeModeTabs.BUILDING_BLOCKS)) {
             event.getEntries().put(new ItemStack(ModBlocks.SNAD.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.getEntries().put(new ItemStack(ModBlocks.RED_SNAD.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             event.getEntries().put(new ItemStack(ModBlocks.SOUL_SNAD.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);

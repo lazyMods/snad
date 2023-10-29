@@ -13,8 +13,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FallingBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.material.MaterialColor;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.common.IPlantable;
 import net.minecraftforge.common.PlantType;
 
@@ -24,8 +23,8 @@ public class SnadBlock extends FallingBlock {
 
 	private final int dustColor;
 
-	public SnadBlock(int dustColor, MaterialColor color) {
-		super(Properties.of(Material.SAND, color).randomTicks().sound(SoundType.SAND).strength(0.5f));
+	public SnadBlock(int dustColor, MapColor color) {
+		super(Properties.of().mapColor(color).randomTicks().sound(SoundType.SAND).strength(0.5f));
 		this.dustColor = dustColor;
 	}
 

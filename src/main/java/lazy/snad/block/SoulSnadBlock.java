@@ -9,7 +9,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -25,7 +25,7 @@ public class SoulSnadBlock extends Block {
 	protected static final VoxelShape SHAPE = Block.box(0.0, 0.0, 0.0, 16.0, 14.0, 16.0);
 
 	public SoulSnadBlock() {
-		super(Properties.of(Material.SAND).randomTicks().sound(SoundType.SAND).strength(0.5f));
+		super(Properties.of().mapColor(MapColor.SAND).randomTicks().sound(SoundType.SAND).strength(0.5f));
 	}
 
 	@Override
