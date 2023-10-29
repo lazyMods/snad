@@ -97,7 +97,7 @@ jar {
         ])
     }
 }
-
+jar.dependsOn(replaceResources)
 jar.finalizedBy('reobfJar')
 
 publishing {
